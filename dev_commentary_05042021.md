@@ -7,8 +7,8 @@ COLUMN1,COLUMN2,...,COLUMN_N
 Where Columns 1...n-1 are set values, and COLUMN_N is a long free-form text field with multiple entries.
 
 The columns are defined as:
-* ROWID: Integer starting at 1
-* SUBJECTID: 5+ digit integer
+* ROW_ID: Integer starting at 1
+* SUBJECT_ID: 5+ digit integer
 * HADM_ID: likely Hospital Admission ID, 6+ digit integer
 * CHARTDATE: obfucated date string with the format NNNN-NN-NN
 * CHARTTIME: appears to be all empty values or np.nan in a pandas dataframe
