@@ -19,6 +19,8 @@ for df_chunk in tqdm(pd.read_csv(NOTES_CSV, chunksize=100000, error_bad_lines=Fa
   frame_data.append(df_chunk)
 frame = pd.concat(frame_data)
 
+
+# requires file with a subset of description names to filter
 df_progNotes = pd.read_csv('ProgressNotes_MIMIC.csv')
 df_categories = df_progNotes['DESCRIPTION_NAMES'].tolist()
 
