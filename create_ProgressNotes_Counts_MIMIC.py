@@ -37,7 +37,7 @@ desc_series = frame['DESCRIPTION'].values
 desc_list = desc_series.tolist()
 desc_list_uniq = list(set(desc_list))
 desc_list = list(filter(lambda x: x != '', desc_list))
-desc_d = Counter(desc_list)
+# desc_d = Counter(desc_list)
 
 s = 'There are ' + str(len(list(set(s_id_list)))) + ' unique non-na subject IDs, and ' + str(len(s_id_list)) + ' total non-na subject IDs.'
 print(s)
